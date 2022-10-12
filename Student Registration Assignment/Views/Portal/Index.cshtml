@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="~/Content/Portal.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <title></title>
+</head>
+<body>
+
+    <section id="header">
+        <nav class="navbar">
+            <div class="nav-item-container">
+                <ul>
+                    <li>
+                        @Html.ActionLink("Ceridian University", "Index", "Portal", new { area = "" }, new { @class = "title nav-text nav-list}" })
+                    </li>
+                    <li>@Html.ActionLink("Apply Now", "Index", "Home", null, new { @class = "nav-text nav-list" })</li>
+                    <li>@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-text nav-list" })</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-text nav-list" })</li>
+                    <li>
+                        @Html.ActionLink("Sign-in", "Index", "Login", null, new { @class = "nav-text btn btn-primary log-in" })
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="">
+            <img src="~/Content/Images/Portal-Main.jpg" alt="Alternate Text" class="front-image" />
+        </div>
+    </section>
+
+    <section id="apply-now">
+
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Apply Now !</h1>
+                <p class="lead text-muted">CERIDIAN University is amoung the leading learning instidtude ranked Top-10 in the world !</p>
+                <p>
+                    @Html.ActionLink("Proceed to application form", "Apply", "Portal", null, new { @class = "btn btn-primary" })
+                    <a href="#courses" class="btn btn-secondary my-2">View top courses</a>
+                </p>
+            </div>
+        </div>
+
+        <section id="courses">
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card">
+                                <img src="~/Content/Images/Website.jpg" alt="Alternate Text" class="course-img"/>
+
+                                <div class="card-body">
+                                    <p class="card-text">So you want to be a web designer? Great! But how do you learn the basics, and turn your designs into functional websites?</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="~/Content/Images/AI.jpg" alt="Alternate Text" class="course-img"/>
+
+                                <div class="card-body">
+                                    <p class="card-text">Artificial Intelligence Allows Machines to Work Efficiently and Solve Problems. See How AI Can Learn and Analyse Vast Amounts of Data.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="~/Content/Images/Linux.jpg" alt="Alternate Text" class="course-img"/>
+
+                                <div class="card-body">
+                                    <p class="card-text">This training you should have a good working knowledge of Linux, from both a graphical and command line perspective.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-4 col-md-4 mb-3">
+                        <h5>Info</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Phone : +230 454 4036</li>
+                            <li class="nav-item mb-2">Email : MSCRecruitment@ceridian.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-md-4 mb-3">
+                        <h5>Social</h5>
+                        <div class="icon-box">
+                            <a href="#" class=""><i class="icon fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="icon-box">
+                            <a href="#" class=""><i class=" icon fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="icon-box">
+                            <a href="#" class=""><i class="icon fa-brands fa-instagram insta"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-4 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2022 Ceridian University, Inc. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+</body>
+</html>
+

@@ -1,0 +1,76 @@
+﻿.title {
+    font-size: 1.5rem;
+}
+
+.nav-item-container {
+    margin: auto;
+    min-width: 90%;
+}
+
+.nav-text {
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #001493;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+li .nav-list {
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.front-image {
+    height: 60%;
+    width: 100%;
+}
+
+.log-in {
+    margin-left: 35rem;
+}
+
+.icon-box {
+    display: inline-block;
+}
+
+.icon {
+    font-size: 3rem;
+    margin: 1rem 3rem 0 0;
+}
+
+.insta {
+    color: indianred;
+}
+
+.insta:hover {
+    color: dimgray;
+}
+
+.course-img {
+    width: 23rem;
+    height: 23rem;
+}
+
+div.card {
+    overflow: hidden;
+    box-shadow: 5px 10px 8px 10px rgb(188, 188, 188);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+div.card:hover {
+    top: -10px;
+}

@@ -1,0 +1,12 @@
+﻿.display {
+    width: 47%;
+    display: inline-block;
+}
+
+.back {
+    color: black;
+    text-decoration: none;
+}
+.err {
+    color: #ff0000;
+}

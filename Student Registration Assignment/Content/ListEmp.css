@@ -1,0 +1,28 @@
+﻿#sideMenu {
+    display: inline-block;
+    position: fixed;
+    width: 16%;
+    height: 100%;
+    background-color: #234eb5;
+    left: 0;
+    top: 11.5%;
+}
+
+/* section introduction */
+.list {
+    font-family: Verdana;
+    line-height: 300%;
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+
+.list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main-body {
+    padding-top: 4rem;
+    padding-left: 7rem;
+}

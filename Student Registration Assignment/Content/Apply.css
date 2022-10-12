@@ -1,0 +1,85 @@
+﻿h2 {
+    color: #ffffff;
+    margin: 1rem 0 2rem 0;
+}
+
+h5 {
+    color: #001085;
+    margin: 1rem 0 2rem 0;
+}
+
+body {
+    background-image: url(Images/book.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    font-weight: 100;
+}
+
+.form-control {
+    background-color: #ffffff;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.form-control label {
+    margin: 0 0 1rem 1rem;
+}
+
+.form-control input, .form-control textarea, .form-control select .form-control label {
+    border: 1px;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.subject-result {
+    
+}
+
+.subject {
+    display: inline-block;
+}
+
+select.subject {
+    float: right;
+}
+
+.my-container {
+    width: 45%
+}
+
+.hide {
+    display: none;
+}
+
+.display {
+    text-align: center;
+    display: block;
+    position: fixed;
+    margin: auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 30rem;
+    box-shadow: 5px 10px 8px 10px #777;
+    border: #001085 solid;
+    border-radius: 20px;
+    transition: top ease 0.5s;
+}
+
+.alert-close {
+    color: #ffffff;
+    width: 20%;
+    margin: 0 0 1rem 0;
+}
